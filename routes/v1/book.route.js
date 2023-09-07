@@ -2,6 +2,11 @@ const express = require("express");
 const bookController = require("../../controllers/book.controller");
 const router = express.Router();
 
+
+
+//Get the book by its ID
+router.get("/:id",bookController.getBookByID)
+
 // Get all books
 router.get("/", bookController.getAll);
 
