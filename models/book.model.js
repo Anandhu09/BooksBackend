@@ -1,9 +1,23 @@
 const mongoose = require("mongoose");
-
+// const validator = require("validator");
+const allowedGenres = [
+  "Fiction",
+  "Non-fiction",
+  "Mystery",
+  "Thriller",
+  "Fantasy",
+  "Science Fiction",
+  "Romance",
+  "Horror",
+  "Biography",
+  "History",
+  "Self-Help",
+];
 const bookSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
+    unique: true,
     minlength: 2,
     maxlength: 255,
   },
@@ -16,8 +30,15 @@ const bookSchema = new mongoose.Schema({
   genre: {
     type: String,
     required: true,
+    enum: allowedGenres,
     minlength: 2,
     maxlength: 100,
+    validate: {
+      validator: (value) => {
+        return allowedGenres.includes(value);
+      },
+      message: "Invalid genre",
+    },
   },
   price: {
     type: Number,
@@ -30,4 +51,6 @@ const bookSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Book", bookSchema);
+const Book = mongoose.model("Book", bookSchema);
+
+module.exports = { Book };

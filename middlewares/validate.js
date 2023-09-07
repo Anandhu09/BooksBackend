@@ -3,7 +3,6 @@ const httpStatus = require("http-status");
 const pick = require("../utils/pick");
 const ApiError = require("../utils/ApiError.js");
 
-
 const validate = (schema) => (req, res, next) => {
   if (Object.keys(req.body).length !== 0 && !req.is("application/json")) {
     return next(
@@ -14,12 +13,9 @@ const validate = (schema) => (req, res, next) => {
     );
   }
 
-
   const validSchema = pick(schema, ["params", "query", "body"]);
 
-
   const object = pick(req, Object.keys(validSchema));
-
 
   const { value, error } = Joi.compile(validSchema)
     .prefs({ errors: { label: "key" } })
@@ -31,7 +27,6 @@ const validate = (schema) => (req, res, next) => {
       .join(", ");
     return next(new ApiError(httpStatus.BAD_REQUEST, errorMessage));
   }
-
 
   Object.assign(req, value);
 
