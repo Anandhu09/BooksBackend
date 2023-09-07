@@ -37,5 +37,25 @@ const searchBook = async (req, res) => {
     }
   }
 };
+const AddBook = async(req, res)=>{
+  const { title, author, genre, price, availability } = req.body;
+  try {
+    const book = await Book.create({
+      title,
+      author,
+      genre,
+      price,
+      availability,
+    });
+    return book
+    
+  } catch (error) {
+    if (error.name === "ValidationError") {
+      res.status(400).json({ message: error.message });
+    } else {
+      res.status(500).json({ message: error.message });
+    }
+  }
+}
 
-module.exports = { getBooks, searchBook };
+module.exports = { getBooks, searchBook , AddBook };
