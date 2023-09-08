@@ -67,13 +67,13 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
 - `GET /cart`: Get all items in the cart. (Bearer Token Required for Authentication)
 
-  **Input:**
+    **Input:**
 
-  - Bearer Token (Authentication)
+        - Bearer Token (Authentication)
 
-  **Output:**
+    **Output:**
 
-  - JSON array of cart items.
+        - JSON array of cart items.
 
 - `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
 
