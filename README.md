@@ -50,7 +50,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `GET /books/search`: Search books by title or author. (Request query is required)
   - Eg:- `/books/search?title=<title_of_the_book>`
   - Eg:- `/books/search?author=<author_of_the_book>`
-- `POST /books`: Add a new book. ( Request body is required)
+- `POST /books`: Add a new book. ( Request body is required for Authentication)
 
   - Eg :- `json`
     {
@@ -65,16 +65,28 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
 ### Cart
 
-- `GET /cart`: Get all items in the cart. (Bearer Token Required)
-- `POST /cart`: Add a book to the cart. (Bearer Token Required)
+- `GET /cart`: Get all items in the cart. (Bearer Token Required for Authentication)
+**Input:**
+  - Bearer Token (Authentication)
+
+  **Output:**
+  - JSON array of cart items.
+
+- `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
 
   - Eg:-
     {
     "bookId":"64fb3749a954b5f9b1e5fa6d",  
     "quantity":15
     }
+    **Input:**
+  - Bearer Token (Authentication)
+  - body with `bookId` and `quantity`
 
-- `PUT /cart`: Update a product in the cart. (Bearer Token Required)
+  **Output:**
+  - JSON array of cart items.
+
+- `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
 
   - Eg:-
     {
