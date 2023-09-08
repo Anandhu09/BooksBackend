@@ -4,8 +4,7 @@ const router = express.Router();
 
 
 
-//Get the book by its ID
-router.get("/:id",bookController.getBookByID)
+
 
 // Get all books
 router.get("/", bookController.getAll);
@@ -15,5 +14,8 @@ router.get("/search", bookController.search);
 
 // Create a new book
 router.post("/", bookController.addBook);
+
+//Get the book by its ID
+router.get("/:id",bookController.getBookByID)
 
 module.exports = router;
