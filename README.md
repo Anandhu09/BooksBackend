@@ -54,11 +54,11 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
   - **Eg :-** `json`
     
-       - "title": "The Hobbit",
-       - "author": "J.R.R. Tolkien",
-       - "genre": "Fantasy",
-       - "price": 12.99,
-       - "availability": true
+        - "title": "The Hobbit",
+        - "author": "J.R.R. Tolkien",
+        - "genre": "Fantasy",
+        - "price": 12.99,
+        - "availability": true
     
 
 - `GET /books/search/:id`: Get a book by its ID. (Request params is required and it should be a valid mongo id)
