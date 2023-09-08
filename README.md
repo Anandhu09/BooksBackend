@@ -60,8 +60,8 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `GET /books/search`: Search books by title or author. (Request query is required)
    - **Eg :-**
 
-          - `/books/search?title=<title_of_the_book>`
-          - `/books/search?author=<author_of_the_book>`
+          - /books/search?title=<title_of_the_book>
+          - /books/search?author=<author_of_the_book>
 
 - `POST /books`: Add a new book. ( Request body is required for Authentication)
 
