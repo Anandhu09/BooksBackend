@@ -52,13 +52,14 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
     - Eg:-  `/books/search?title=<title_of_the_book>` 
     - Eg:-  `/books/search?author=<author_of_the_book>`
  - `POST /books`: Add a new book. ( Request body is required)
-    - Eg :- `{`
-             `"title": "The Hobbit",`
-             `"author": "J.R.R. Tolkien",`
-             `"genre": "Fantasy",`
-             `"price": 12.99,`
-             `"availability": true`
-            `}`
+    - Eg :- ```json
+            {
+             "title": "The Hobbit",
+             "author": "J.R.R. Tolkien",
+             "genre": "Fantasy",
+             "price": 12.99,
+             "availability": true
+            }
 
  - `GET /books/search/:id`: Get a book by its ID. (Request params is required an it should be a valid mongo id)
 
