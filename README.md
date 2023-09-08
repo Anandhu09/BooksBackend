@@ -52,14 +52,14 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
   - Eg:- `/books/search?author=<author_of_the_book>`
 - `POST /books`: Add a new book. ( Request body is required for Authentication)
 
-  - Eg :- `json`
-    {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "genre": "Fantasy",
-    "price": 12.99,
-    "availability": true
-    }
+  - **Eg :-** `json`
+    
+       - "title": "The Hobbit",
+       - "author": "J.R.R. Tolkien",
+       - "genre": "Fantasy",
+       - "price": 12.99,
+       - "availability": true
+    
 
 - `GET /books/search/:id`: Get a book by its ID. (Request params is required and it should be a valid mongo id)
 
@@ -94,7 +94,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
 - `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
 
-     - Eg:-
+     - **Eg:-**
          
             - "bookId":"64fb3749a954b5f9b1e5fa6d",  
             - "quantity":15
