@@ -15,7 +15,7 @@ Before running the application, make sure you have the following installed:
 
 1. Clone the repository:
 
-    - git clone https://github.com/Anandhu09/BooksBackend.git
+       git clone https://github.com/Anandhu09/BooksBackend.git
 
 2. Install dependencies:
 
