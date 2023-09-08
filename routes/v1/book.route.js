@@ -1,5 +1,7 @@
 const express = require("express");
 const bookController = require("../../controllers/book.controller");
+const validate = require("../../middlewares/validate");
+const bookValidation = require("../../validations/book.validation");
 const router = express.Router();
 
 
@@ -10,9 +12,9 @@ router.get("/", bookController.getAll);
 router.get("/search", bookController.search);
 
 // Create a new book
-router.post("/", bookController.addBook);
+router.post("/",validate(bookValidation.addBookToCart), bookController.addBook);
 
 //Get the book by its ID
-router.get("/search/:id",bookController.getBookByID)
+router.get("/search/:id",validate(bookValidation.getBook),bookController.getBookByID)
 
 module.exports = router;

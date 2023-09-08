@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-// const validator = require("validator");
 const allowedGenres = [
   "Fiction",
   "Non-fiction",
@@ -37,7 +36,7 @@ const bookSchema = new mongoose.Schema({
       validator: (value) => {
         return allowedGenres.includes(value);
       },
-      message: "Invalid genre",
+      message: `Invalid genre , Genres should be any of these ${allowedGenres}`,
     },
   },
   price: {
@@ -53,4 +52,5 @@ const bookSchema = new mongoose.Schema({
 
 const Book = mongoose.model("Book", bookSchema);
 
-module.exports = { Book };
+module.exports.Book = Book;
+module.exports.bookSchema = bookSchema;

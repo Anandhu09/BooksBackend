@@ -14,18 +14,10 @@ const cartSchema = mongoose.Schema(
         quantity: Number,
       },
     ],
-    orders: [
-      {
-        books: [
-          {
-            books: bookSchema,
-            quantity: Number,
-          },
-        ],
-        total: Number,
-        date: { type: Date, default: Date.now },
-      },
-    ],
+    totalPrice:{
+      type:Number,
+      required:false
+    }
   },
   {
     timestamps: false,
