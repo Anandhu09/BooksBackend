@@ -15,19 +15,19 @@ Before running the application, make sure you have the following installed:
 
 1. Clone the repository:
 
-git clone https://github.com/Anandhu09/BooksBackend.git
+    - git clone https://github.com/Anandhu09/BooksBackend.git
 
 2. Install dependencies:
 
--cd BOOKSTORE BACKEND
--npm install
+    - cd BOOKSTORE BACKEND
+    - npm install
 
 3. Set up environment variables:
 
-- PORT=8082
-- MONGODB_URI=<your_mongodb_connection_string>
-- JWT_SECRET=<your_jwt_secret>
-- JWT_ACCESS_EXPIRATION_MINUTES=<token_expiration_time_in_minutes>
+    - PORT=8082
+    - MONGODB_URI=<your_mongodb_connection_string>
+    - JWT_SECRET=<your_jwt_secret>
+    - JWT_ACCESS_EXPIRATION_MINUTES=<token_expiration_time_in_minutes>
 
 ### Usage
 
