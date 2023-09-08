@@ -78,10 +78,10 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
 
   - **Eg:-**
-        {
-            "bookId":"64fb3749a954b5f9b1e5fa6d",  
-            "quantity":15
-        }
+        - {
+            - "bookId":"64fb3749a954b5f9b1e5fa6d",  
+            - "quantity":15
+        - }
 
      **Input:**
 
