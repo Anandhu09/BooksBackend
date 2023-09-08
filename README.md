@@ -78,27 +78,27 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
 
   - Eg:-
-    {
-    "bookId":"64fb3749a954b5f9b1e5fa6d",  
-    "quantity":15
-    }
+        {
+            "bookId":"64fb3749a954b5f9b1e5fa6d",  
+            "quantity":15
+        }
 
-  **Input:**
-  
-  - Bearer Token (Authentication)
-  - body with `bookId` and `quantity`
+     **Input:**
 
-  **Output:**
+         - Bearer Token (Authentication)
+         - body with `bookId` and `quantity`
 
-  - JSON array of cart items.
+     **Output:**
+
+         - JSON array of cart items.
 
 - `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
 
-  - Eg:-
-    {
-    "bookId":"64fb3749a954b5f9b1e5fa6d",  
-    "quantity":15
-    }
+     - Eg:-
+         {
+            "bookId":"64fb3749a954b5f9b1e5fa6d",  
+            "quantity":15
+         }
 
 - `PUT /cart/checkout`: Checkout the cart. (Bearer Token Required)
 
