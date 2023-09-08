@@ -24,14 +24,14 @@ Before running the application, make sure you have the following installed:
 
 3. Set up environment variables:
 
-    - PORT=8082
-    - MONGODB_URI=<your_mongodb_connection_string>
-    - JWT_SECRET=<your_jwt_secret>
-    - JWT_ACCESS_EXPIRATION_MINUTES=<token_expiration_time_in_minutes>
+       PORT=8082
+       MONGODB_URI=<your_mongodb_connection_string>
+       JWT_SECRET=<your_jwt_secret>
+       JWT_ACCESS_EXPIRATION_MINUTES=<token_expiration_time_in_minutes>
 
 ### Usage
 
-Start the application:
+**Start the application:**
 
       npm start
 
