@@ -39,7 +39,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
 ### Routes
 
-# Authentication
+- Authentication
 
 - `POST /auth/register`: Register a new user.
 - `POST /auth/login`: Log in an existing user.
