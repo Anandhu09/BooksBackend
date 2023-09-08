@@ -95,10 +95,10 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
 
      - Eg:-
-         {
-            "bookId":"64fb3749a954b5f9b1e5fa6d",  
-            "quantity":15
-         }
+         
+            - "bookId":"64fb3749a954b5f9b1e5fa6d",  
+            - "quantity":15
+         
 
 - `PUT /cart/checkout`: Checkout the cart. (Bearer Token Required)
 
