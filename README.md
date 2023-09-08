@@ -44,15 +44,15 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 * `POST /auth/register`: Register a new user. (Request Body is required)
    - **Eg :-** `json` 
        
-          - "name":"anandhu",
-          - "email":"anandhu@gmail.com",
-          - "password":"Anandhu123"
+            "name":"anandhu",
+            "email":"anandhu@gmail.com",
+            "password":"Anandhu123"
 
 * `POST /auth/login`: Log in an existing user. (Request Body is required)
    - **Eg :-** `json` 
        
-          - "email":"anandhu@gmail.com",
-          - "password":"Anandhu123"
+            "email":"anandhu@gmail.com",
+            "password":"Anandhu123"
 
 ### Books
 
@@ -60,18 +60,18 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - `GET /books/search`: Search books by title or author. (Request query is required)
    - **Eg :-**
 
-          - /books/search?title=<title_of_the_book>
-          - /books/search?author=<author_of_the_book>
+            /books/search?title=<title_of_the_book>
+            /books/search?author=<author_of_the_book>
 
 - `POST /books`: Add a new book. ( Request body is required for Authentication)
 
   - **Eg :-** `json`
     
-        - "title": "The Hobbit",
-        - "author": "J.R.R. Tolkien",
-        - "genre": "Fantasy",
-        - "price": 12.99,
-        - "availability": true
+          "title": "The Hobbit",
+          "author": "J.R.R. Tolkien",
+          "genre": "Fantasy",
+          "price": 12.99,
+          "availability": true
     
 
 - `GET /books/search/:id`: Get a book by its ID. (Request params is required and it should be a valid mongo id)
@@ -82,35 +82,35 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 
     **Input:**
 
-        - Bearer Token (Authentication)
+          Bearer Token (Authentication)
 
     **Output:**
 
-        - JSON array of cart items.
+          JSON array of cart items.
 
 - `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
 
    **Eg:-**
          
-         - "bookId":"64fb3749a954b5f9b1e5fa6d",  
-         - "quantity":15
+           "bookId":"64fb3749a954b5f9b1e5fa6d",  
+           "quantity":15
           
 
      **Input:**
 
-         - Bearer Token (Authentication)
-         - body with `bookId` and `quantity`
+           Bearer Token (Authentication)
+           body with `bookId` and `quantity`
 
      **Output:**
 
-         - JSON array of cart items.
+           JSON array of cart items.
 
 - `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
 
      - **Eg:-**
          
-            - "bookId":"64fb3749a954b5f9b1e5fa6d",  
-            - "quantity":15
+              "bookId":"64fb3749a954b5f9b1e5fa6d",  
+              "quantity":15
          
 
 - `PUT /cart/checkout`: Checkout the cart. (Bearer Token Required)
