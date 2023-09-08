@@ -42,10 +42,11 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 - Authentication
 
 * `POST /auth/register`: Register a new user. (Request Body is required)
-    - **Eg :-** `json`     
-         - "name":"anandhu",
-         - "email":"anandhu@gmail.com",
-         - "password":"Anandhu123"
+   - **Eg :-** `json` 
+       
+          - "name":"anandhu",
+          - "email":"anandhu@gmail.com",
+          - "password":"Anandhu123"
 
 * `POST /auth/login`: Log in an existing user. (Request Body is required)
 
