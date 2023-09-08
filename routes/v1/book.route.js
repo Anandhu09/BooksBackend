@@ -3,9 +3,6 @@ const bookController = require("../../controllers/book.controller");
 const router = express.Router();
 
 
-
-
-
 // Get all books
 router.get("/", bookController.getAll);
 
@@ -16,6 +13,6 @@ router.get("/search", bookController.search);
 router.post("/", bookController.addBook);
 
 //Get the book by its ID
-router.get("/:id",bookController.getBookByID)
+router.get("/search/:id",bookController.getBookByID)
 
 module.exports = router;
