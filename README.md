@@ -66,6 +66,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 ### Cart
 
 - `GET /cart`: Get all items in the cart. (Bearer Token Required for Authentication)
+
   **Input:**
 
   - Bearer Token (Authentication)
@@ -81,7 +82,9 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
     "bookId":"64fb3749a954b5f9b1e5fa6d",  
     "quantity":15
     }
-    **Input:**
+
+  **Input:**
+  
   - Bearer Token (Authentication)
   - body with `bookId` and `quantity`
 
