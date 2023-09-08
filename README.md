@@ -19,8 +19,8 @@ git clone https://github.com/Anandhu09/BooksBackend.git
 
 2. Install dependencies:
 
- -cd BOOKSTORE BACKEND
- -npm install
+-cd BOOKSTORE BACKEND
+-npm install
 
 3. Set up environment variables:
 
@@ -33,16 +33,16 @@ git clone https://github.com/Anandhu09/BooksBackend.git
 
 Start the application:
 
- -npm start
+-npm start
 
 The API will be available at `http://localhost:8082` ( Use the endpoints which is given below along with the API ;)
 
 ### Routes
 
-* Authentication
+- Authentication
 
-- `POST /auth/register`: Register a new user.
-- `POST /auth/login`: Log in an existing user.
+* `POST /auth/register`: Register a new user.
+* `POST /auth/login`: Log in an existing user.
 
 ### Books
 
@@ -66,10 +66,12 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
 ### Cart
 
 - `GET /cart`: Get all items in the cart. (Bearer Token Required for Authentication)
-**Input:**
+  **Input:**
+
   - Bearer Token (Authentication)
 
   **Output:**
+
   - JSON array of cart items.
 
 - `POST /cart`: Add a book to the cart. (Bearer Token Required for Authentication)
@@ -84,6 +86,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
   - body with `bookId` and `quantity`
 
   **Output:**
+
   - JSON array of cart items.
 
 - `PUT /cart`: Update a product in the cart. (Bearer Token Required for Authentication)
@@ -95,3 +98,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
     }
 
 - `PUT /cart/checkout`: Checkout the cart. (Bearer Token Required)
+
+### Queries
+
+- Feel free to contact at anandhu.vikraman007@gmail.com incase of any queries. Happy Coding!!! ANANDHU :)
