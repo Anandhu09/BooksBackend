@@ -52,7 +52,7 @@ The API will be available at `http://localhost:8082` ( Use the endpoints which i
     - Eg:-  `/books/search?title=<title_of_the_book>` 
     - Eg:-  `/books/search?author=<author_of_the_book>`
  - `POST /books`: Add a new book. ( Request body is required)
-    - Eg :- ```json
+    - Eg :- ```json```
             {
              "title": "The Hobbit",
              "author": "J.R.R. Tolkien",
