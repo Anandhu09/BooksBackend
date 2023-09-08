@@ -36,11 +36,11 @@ Start the application:
 
 npm start
 
-The API will be available at http://localhost:8082
+The API will be available at `http://localhost:8082` ( Use the endpoints which is given below along with the API ;)
 
 ### Routes
 
-## Authentication
+# Authentication
 
  - `POST /auth/register`: Register a new user.
  - `POST /auth/login`: Log in an existing user.
@@ -52,15 +52,15 @@ The API will be available at http://localhost:8082
     - Eg:-  `/books/search?title=<title_of_the_book>` 
     - Eg:-  `/books/search?author=<author_of_the_book>`
  - `POST /books`: Add a new book. ( Request body is required)
-    - Eg :- {
-             "title": "The Hobbit",
-             "author": "J.R.R. Tolkien",
-             "genre": "Fantasy",
-             "price": 12.99,
-             "availability": true
-            }
+    - Eg :- `{`
+             `"title": "The Hobbit",`
+             `"author": "J.R.R. Tolkien",`
+             `"genre": "Fantasy",`
+             `"price": 12.99,`
+             `"availability": true`
+            `}`
 
- - `GET /books/search/:id`: Get a book by its ID.
+ - `GET /books/search/:id`: Get a book by its ID. (Request params is required an it should be a valid mongo id)
 
 ### Cart
 
