@@ -19,8 +19,8 @@ Before running the application, make sure you have the following installed:
 
 2. Install dependencies:
 
-    - cd BOOKSTORE BACKEND
-    - npm install
+       cd BOOKSTORE BACKEND
+       npm install
 
 3. Set up environment variables:
 
@@ -33,7 +33,7 @@ Before running the application, make sure you have the following installed:
 
 Start the application:
 
-    - npm start
+      npm start
 
 The API will be available at `http://localhost:8082` ( Use the endpoints which is given below along with the API ;)
 
